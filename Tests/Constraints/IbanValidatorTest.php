@@ -180,6 +180,7 @@ class IbanValidatorTest extends AbstractConstraintValidatorTest
             array('NL39 RASO 0300 0652 64', Iban::CHECKSUM_FAILED_ERROR),
             array('NO93 8601117 947', Iban::CHECKSUM_FAILED_ERROR),
             array('CY170020 128 0000 0012 0052 7600', Iban::CHECKSUM_FAILED_ERROR),
+            array('FR76', Iban::CHECKSUM_FAILED_ERROR),
             array('foo', Iban::TOO_SHORT_ERROR),
             array('123', Iban::TOO_SHORT_ERROR),
             array('0750447346', Iban::INVALID_COUNTRY_CODE_ERROR),
